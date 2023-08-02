@@ -5,6 +5,7 @@ import schedule
 import os
 
 def JueJin():
+    print(os.environ);
     cookie = os.environ["JUEJIN_COOKIE"];
     SENDKEY = os.environ["JUEJIN_SENDKEY"];
     data = os.environ["JUEJIN_DATA"];
