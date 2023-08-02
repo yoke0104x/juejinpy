@@ -8,6 +8,9 @@ def JueJin():
     cookie = os.environ["JUEJIN_COOKIE"];
     SENDKEY = os.environ["JUEJIN_SENDKEY"];
     data = os.environ["JUEJIN_DATA"];
+    print("cookie: " + cookie);
+    print("data: " + data);
+    print("sendkey: " + SENDKEY);
     return _request(cookie, data, SENDKEY)
 
 
