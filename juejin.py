@@ -47,7 +47,7 @@ def _request(cookie, data, SENDKEY):
                 else:
                     msg += res["err_msg"];
             except Exception as e:
-               msg += "沾喜气失败！原因：" + str(e)";
+               msg += "沾喜气失败！";
         else:
             msg = draw.json()["err_msg"];
     else:
