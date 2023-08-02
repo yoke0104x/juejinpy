@@ -10,6 +10,15 @@ on:
     branches: ["main"]
   schedule:
     - cron: "0 1 * * *"
+  # 手动触发事件
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'
 
 permissions:
   contents: read
