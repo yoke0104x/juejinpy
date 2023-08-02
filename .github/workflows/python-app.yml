@@ -28,8 +28,8 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run Python
         env:
-          JUEJIN_COOKIE: ${{ secrets.APP_ID }}
-          1: ${{ secrets.DINGMENG }}
-          2: ${{ secrets.JUEJIN_COOKIE }}
+          JUEJIN_COOKIE: ${{ secrets.JUEJIN_COOKIE }}
+          JUEJIN_SENDKEY: ${{ secrets.JUEJIN_SENDKEY }}
+          JUEJIN_DATA: ${{ secrets.JUEJIN_DATA }}
         run: |
           python ./juejin.py
