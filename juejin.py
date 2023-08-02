@@ -11,9 +11,7 @@ def JueJin():
     print("cookie: " + cookie);
     print("data: " + data);
     print("sendkey: " + SENDKEY);
-    return _request(cookie, data, SENDKEY)
-
-    return "掘金签到";
+    return _request(cookie, data, SENDKEY);
 
 
 def _request(cookie, data, SENDKEY):
