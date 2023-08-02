@@ -5,15 +5,13 @@ import schedule
 import os
 
 def JueJin():
-    print(os.environ.get("JUEJIN_COOKIE"));
-    print(os.environ);
-    # cookie = os.environ["JUEJIN_COOKIE"];
-    # SENDKEY = os.environ["JUEJIN_SENDKEY"];
-    # data = os.environ["JUEJIN_DATA"];
-    # print("cookie: " + cookie);
-    # print("data: " + data);
-    # print("sendkey: " + SENDKEY);
-    # return _request(cookie, data, SENDKEY)
+    cookie = os.environ["JUEJIN_COOKIE"];
+    SENDKEY = os.environ["JUEJIN_SENDKEY"];
+    data = os.environ["JUEJIN_DATA"];
+    print("cookie: " + cookie);
+    print("data: " + data);
+    print("sendkey: " + SENDKEY);
+    return _request(cookie, data, SENDKEY)
 
     return "掘金签到";
 
