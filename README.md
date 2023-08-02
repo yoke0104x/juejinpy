@@ -9,7 +9,6 @@
     - JUEJIN_COOKIE: 用于存放掘金的cookie
     - JUEJIN_SENDKEY: 用于向[`server`](https://sct.ftqq.com/sendkey)酱的公众号推送新信息的key
     - JUEJIN_DATA: 用于存放掘金的`aid`信息以及`uuid` 格式为 {aid:xxxx,uuid:xxxx,spider:0}
-    - JUEJIN_SCHEDULE: 用于存放定时任务的时间 格式遵循`Cron`格式例如： 0 0 0 * * * (每天0点0分0秒执行)
 3. 进入`Actions`，点击`I understand my workflows, go ahead and enable them`
 
 
