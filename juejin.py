@@ -33,11 +33,13 @@ def _request(cookie, data, SENDKEY):
                     "page_size":5
                 });
                 history = watcherList.json()["data"]["lotteries"][0];
+                print("围观用户日志:"+history)
                 # 沾喜气接口
                 joyful = requests.post("https://api.juejin.cn/growth_api/v1/lottery_lucky/dip_lucky", headers={"cookie": cookie}, params=data,data={
                     "history_id":history["history_id"]
                 });
                 res = joyful.json();
+                print("沾喜气日志:"+res)
                 if res["err_no"] == 0:
                     if not res["data"]["has_dip"]:
                         user_name = history["user_name"]
